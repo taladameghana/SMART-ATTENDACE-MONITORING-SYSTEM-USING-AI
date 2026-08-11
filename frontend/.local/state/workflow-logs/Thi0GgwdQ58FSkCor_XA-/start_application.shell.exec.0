@@ -1,0 +1,97 @@
+
+> rest-express@1.0.0 dev:client
+> vite dev --port 5000
+
+[1G[0K
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J
+  [32m[1mVITE[22m v7.3.1[39m  [2mready in [0m[1m331[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5000[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.31.70.98:[1m5000[22m/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[RUNTIME_ERROR]{"type":"runtime-error","timestamp":1773315487109,"name":"Error","message":"Progress is not defined","stack":"    at /home/runner/workspace/client/src/pages/teacher.tsx:305:32\n    at Array.map (<anonymous>)\n    at TeacherPage /home/runner/workspace/client/src/pages/teacher.tsx:278:39\n\n\n\n\n\n\n","loc":{"line":305,"column":32,"file":"/home/runner/workspace/client/src/pages/teacher.tsx"},"frame":"303|                              <div className=\"flex items-center gap-2\">\n304|                                <span className=\"font-medium text-sm\">{record.stressScore}</span>\n305|                                <Progress value={record.stressScore} className=\"h-1.5 w-16\" />\n   |                                 ^\n306|                              </div>\n307|                            </TableCell>"}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:40:39 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/login.tsx, /src/index.css[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:40:40 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/student.tsx, /src/index.css[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:40:40 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher.tsx, /src/index.css[22m

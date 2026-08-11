@@ -1,0 +1,113 @@
+Build a full-stack web application called “Smart Attendance & Student Wellbeing Monitoring System”.
+
+TECH STACK REQUIREMENTS:
+- Frontend: React + TypeScript + Vite
+- Backend: Node.js + Express + TypeScript
+- Authentication: Passport.js with session-based authentication
+- Database: PostgreSQL hosted on Neon
+- ORM: Drizzle ORM
+- Deployment: Render
+- Face Capture: Browser Webcam API
+- API State Management: React Query
+- Styling: Tailwind CSS + modern UI components
+
+CORE FUNCTIONALITY:
+1. User Roles:
+   - Student
+   - Teacher
+
+2. Authentication:
+   - Secure login & logout
+   - Role-based access control
+   - Session stored using express-session
+
+3. Student Flow:
+   - Capture face image using webcam
+   - Submit daily wellbeing questionnaire
+   - Automatically mark attendance
+   - View personal attendance history
+
+4. Teacher Flow:
+   - View total students
+   - View attendance for today
+   - View average class stress level
+   - View student-wise attendance and wellbeing history
+
+FACE ANALYSIS & STRESS DETECTION:
+- Capture face image from webcam
+- Analyze facial expressions using a Machine Learning model
+- Detect emotions such as:
+  - Happy
+  - Neutral
+  - Sad
+  - Stressed
+  - Tired
+- Convert detected facial emotion into a stress score (0–100)
+- Combine facial stress score with questionnaire responses to compute final stress score
+
+MACHINE LEARNING REQUIREMENTS:
+- Use a pre-trained facial expression recognition model
+- The model should work on single face images
+- The ML inference can be done:
+  - Either on the frontend using JavaScript
+  - Or via a lightweight backend service
+
+DEPLOYMENT REQUIREMENTS:
+- Backend deployed on Render
+- Frontend served from the same Render service
+- PostgreSQL database hosted on Neon
+- Environment variables managed securely
+
+OUTPUT:
+- Fully working attendance + wellbeing system
+- Cloud deployed
+- Database integrated
+- Stress analysis from face expressions
+🧠 RECOMMENDED ML MODEL FOR FACE STRESS DETECTION
+Since this is academic + demo + deadline-friendly, don’t use heavy research models.
+Use pre-trained facial emotion recognition models.
+✅ BEST OPTION (Highly Recommended)
+FER-2013 based CNN Model
+Dataset: FER-2013
+Detects: Happy, Sad, Neutral, Angry, Fear, Surprise
+Widely used in academic projects
+Easy to explain in review
+How to map emotion → stress:
+Emotion
+Stress Score
+Happy
+10
+Neutral
+30
+Sad
+60
+Angry
+80
+Fear
+85
+Tired
+70
+Final Stress Score =
+Copy code
+
+(Facial Stress Score + Questionnaire Stress Score) / 2
+✅ JS-FRIENDLY OPTION (BEST FOR YOUR CURRENT STACK)
+face-api.js
+Runs directly in browser
+Uses TensorFlow.js
+No Python required
+Perfect for React projects
+Detects:
+happy
+sad
+angry
+neutral
+surprised
+📌 Why perfect for you
+No extra backend ML service
+Works with webcam
+Fast to integrate
+Accepted in reviews
+Official models used:
+SSD Mobilenet v1
+Face Expression Recognition model
